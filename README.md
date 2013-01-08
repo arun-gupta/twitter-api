@@ -1,11 +1,10 @@
-Maven coordinates
------------------
+## Maven coordinates
 
-&lt;dependency>
-   &lt;groupId>org.glassfish.samples&lt;/groupId>
-   &lt;artifactId>twitter-api&lt;/artifactId>
-   &lt;version>1.0-SNAPSHOT&lt;/version>
-&lt;/dependency>
+    <dependency>
+       <groupId>org.glassfish.samples</groupId>
+       <artifactId>twitter-api</artifactId>
+       <version>1.0-SNAPSHOT</version>
+    </dependency>
 
 ## Additional Dependencies 
 
