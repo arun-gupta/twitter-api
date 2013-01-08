@@ -1,11 +1,11 @@
 Maven coordinates
 -----------------
 
-<dependency>
-   <groupId>org.glassfish.samples</groupId>
-   <artifactId>twitter-api</artifactId>
-   <version>1.0-SNAPSHOT</version>
-</dependency>
+&lt;dependency>
+   &lt;groupId>org.glassfish.samples&lt;/groupId>
+   &lt;artifactId>twitter-api&lt;/artifactId>
+   &lt;version>1.0-SNAPSHOT&lt;/version>
+&lt;/dependency>
 
 Additional Dependencies 
 -----------------------
@@ -14,16 +14,16 @@ The implementation of this API uses Jersey OAuth Filters for authentication with
 The following additional dependencies are required if any API that requires 
 authentication is used.
 
-<dependency>
-    <groupId>com.sun.jersey.contribs.jersey-oauth</groupId>
-    <artifactId>oauth-client</artifactId>
-    <version>1.11</version>
-</dependency>
-<dependency>
-    <groupId>com.sun.jersey.contribs.jersey-oauth</groupId>
-    <artifactId>oauth-signature</artifactId>
-    <version>1.11</version>
-</dependency> 
+&lt;dependency>
+    &lt;groupId>com.sun.jersey.contribs.jersey-oauth&lt;/groupId>
+    &lt;artifactId>oauth-client&lt;/artifactId>
+    &lt;version>1.11&lt;/version>
+&lt;/dependency>
+&lt;dependency>
+    &lt;groupId>com.sun.jersey.contribs.jersey-oauth&lt;/groupId>
+    &lt;artifactId>oauth-signature&lt;/artifactId>
+    &lt;version>1.11&lt;/version>
+&lt;/dependency> 
 
 
 How to get started ?
@@ -37,7 +37,7 @@ A non-secure invocation of the API looks like
 
 SearchResults result = twitter.search("glassfish", SearchResults.class);
 for (SearchResultsTweet t : result.getResults()) {
- out.println(t.getText() + "<br/>");
+ out.println(t.getText() + "&lt;br/>");
 }
 
 
@@ -51,7 +51,7 @@ org.glassfish.samples.twitter.api
 If the project is deployed on GlassFish 3.x, then add the following line to 
 glassfish/domains/domain1/config/logging.properties
 
-org.glassfish.samples.twitter.api.level=<LEVEL>
+org.glassfish.samples.twitter.api.level=&lt;LEVEL>
 
-where <LEVEL> can be SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST
+where &lt;LEVEL> can be SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST
 
