@@ -13,16 +13,16 @@ The implementation of this API uses Jersey OAuth Filters for authentication with
 The following additional dependencies are required if any API that requires 
 authentication is used.
 
-    &lt;dependency>
-        &lt;groupId>com.sun.jersey.contribs.jersey-oauth&lt;/groupId>
-        &lt;artifactId>oauth-client&lt;/artifactId>
-        &lt;version>1.11&lt;/version>
-    &lt;/dependency>
-    &lt;dependency>
-        &lt;groupId>com.sun.jersey.contribs.jersey-oauth&lt;/groupId>
-        &lt;artifactId>oauth-signature&lt;/artifactId>
-        &lt;version>1.11&lt;/version>
-    &lt;/dependency> 
+    <dependency>
+        <groupId>com.sun.jersey.contribs.jersey-oauth</groupId>
+        <artifactId>oauth-client</artifactId>
+        <version>1.11</version>
+    </dependency>
+    <dependency>
+        <groupId>com.sun.jersey.contribs.jersey-oauth</groupId>
+        <artifactId>oauth-signature</artifactId>
+        <version>1.11</version>
+    </dependency> 
 
 
 ## How to get started ?
@@ -35,7 +35,7 @@ A non-secure invocation of the API looks like
 
     SearchResults result = twitter.search("glassfish", SearchResults.class);
     for (SearchResultsTweet t : result.getResults()) {
-       out.println(t.getText() + "&lt;br/>");
+       out.println(t.getText() + "<br/>");
     }
 
 
@@ -43,12 +43,12 @@ A non-secure invocation of the API looks like
 
 Implementation of the API uses JDK logging. The logger name is:
 
-org.glassfish.samples.twitter.api
+    org.glassfish.samples.twitter.api
 
 If the project is deployed on GlassFish 3.x, then add the following line to 
 glassfish/domains/domain1/config/logging.properties
 
-org.glassfish.samples.twitter.api.level=&lt;LEVEL>
+    org.glassfish.samples.twitter.api.level=<LEVEL>
 
 where &lt;LEVEL> can be SEVERE, WARNING, INFO, CONFIG, FINE, FINER, FINEST
 
